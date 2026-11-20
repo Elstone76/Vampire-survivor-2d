@@ -1,0 +1,2 @@
+﻿51598
+/Users/elistone/Desktop/Godot_mono.app/Contents/MacOS/Godot

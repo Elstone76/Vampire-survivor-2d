@@ -1,33 +1,38 @@
-[gd_scene format=3 uid="uid://swcb8q32cvqi"]
+[gd_scene load_steps=3 format=3 uid="uid://swcb8q32cvqi"]
 
 [ext_resource type="PackedScene" uid="uid://c1sx7bic4uhdj" path="res://player.tscn" id="1_3cish"]
-[ext_resource type="Texture2D" uid="uid://bql1cc345qv7d" path="res://trees/pine_tree.png" id="2_y3pti"]
+[ext_resource type="PackedScene" uid="uid://dq3r015sr1uql" path="res://pine_tree.tscn" id="2_y3pti"]
 
-[node name="Game" type="Node2D" unique_id=1354650036]
+[node name="Game" type="Node2D"]
+y_sort_enabled = true
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1920713247]
+[node name="ColorRect" type="ColorRect" parent="."]
 offset_right = 1939.0
 offset_bottom = 1084.0
 
-[node name="Player" parent="ColorRect" unique_id=400407835 instance=ExtResource("1_3cish")]
+[node name="Player" parent="ColorRect" instance=ExtResource("1_3cish")]
 position = Vector2(954, 508)
 
-[node name="PineTree" type="Sprite2D" parent="." unique_id=1566179852]
-position = Vector2(360, 271)
-texture = ExtResource("2_y3pti")
+[node name="PineTree" parent="." instance=ExtResource("2_y3pti")]
+position = Vector2(307, 764)
 
-[node name="PineTree2" type="Sprite2D" parent="." unique_id=1540341350]
-position = Vector2(341, 783)
-texture = ExtResource("2_y3pti")
+[node name="PineTree2" parent="." instance=ExtResource("2_y3pti")]
+position = Vector2(294, 271)
 
-[node name="PineTree3" type="Sprite2D" parent="." unique_id=1452730155]
-position = Vector2(1371, 296)
-texture = ExtResource("2_y3pti")
+[node name="PineTree3" parent="." instance=ExtResource("2_y3pti")]
+position = Vector2(1333, 271)
 
-[node name="PineTree4" type="Sprite2D" parent="." unique_id=707182016]
-position = Vector2(1493, 312)
-texture = ExtResource("2_y3pti")
+[node name="PineTree4" parent="." instance=ExtResource("2_y3pti")]
+position = Vector2(1468, 284)
 
-[node name="PineTree5" type="Sprite2D" parent="." unique_id=137535935]
-position = Vector2(1474, 745)
-texture = ExtResource("2_y3pti")
+[node name="PineTree5" parent="." instance=ExtResource("2_y3pti")]
+position = Vector2(1287, 884)
+
+[node name="PineTree6" parent="." instance=ExtResource("2_y3pti")]
+position = Vector2(793, 205)
+
+[node name="PineTree7" parent="." instance=ExtResource("2_y3pti")]
+position = Vector2(1408, 199)
+
+[node name="PineTree8" parent="." instance=ExtResource("2_y3pti")]
+position = Vector2(1707, 562)
